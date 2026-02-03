@@ -1,0 +1,6 @@
+# Environnement virtuel
+.venv/
+.vscode
+htlmcov/
+# Fichiers sensibles
+.env
