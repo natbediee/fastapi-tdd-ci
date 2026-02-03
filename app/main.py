@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from .services import compute_bonus
+from app.services import compute_bonus
 
 app = FastAPI()
 

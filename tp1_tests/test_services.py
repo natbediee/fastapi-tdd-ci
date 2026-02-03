@@ -1,5 +1,5 @@
 import pytest
-from tp1.app.services import compute_bonus
+from app.services import compute_bonus
 
 def test_bonus_low_sales():
     assert compute_bonus(40000) == 2000
