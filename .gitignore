@@ -2,5 +2,7 @@
 .venv/
 .vscode
 htlmcov/
+# Python cache
+__pycache__/
 # Fichiers sensibles
 .env
