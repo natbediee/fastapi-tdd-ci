@@ -13,7 +13,7 @@ jobs:
         - name: Set up Python
           uses: actions/setup-python@v5
           with:
-            python-version: "3.11"
+            python-version: "3.12"
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
@@ -28,4 +28,13 @@ jobs:
           uses: actions/checkout@v4
         - name: Build Docker image
           run: docker build -t fastapi-test .
+    docker-tests:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: Build Docker image for test run
+          run: docker build -t fastapi-test .
+        - name: Run tests in Docker container
+          run: docker run --rm fastapi-test
            
