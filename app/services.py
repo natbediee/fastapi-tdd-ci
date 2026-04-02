@@ -6,5 +6,5 @@ def compute_bonus(salary: float) -> float:
     return salary * 0.10
 
     # ERREUR VOLONTAIRE 
-    #return salary * 0.2
+    return salary * 0.2
 
