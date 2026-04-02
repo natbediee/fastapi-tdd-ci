@@ -21,12 +21,14 @@ pluggy==1.6.0
 pydantic==2.12.5
 pydantic_core==2.41.5
 Pygments==2.19.2
+pypdf==6.9.2
 pytest==9.0.2
 pytest-bdd==8.1.0
 pytest-cov==7.0.0
 PyYAML==6.0.3
 requests==2.32.5
 responses==0.25.8
+ruff==0.15.8
 six==1.17.0
 starlette==0.50.0
 typing-inspection==0.4.2
