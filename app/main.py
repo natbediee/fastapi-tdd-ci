@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from app.services import compute_bonus
 
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 @app.get("/bonus")
 def get_bonus(sales: float):
