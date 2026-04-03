@@ -18,10 +18,12 @@ services:
     networks:
       - monitoring
 
+
   grafana:
     image: grafana/grafana:latest
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SERVER_DOMAIN=13.51.157.159
       - GF_SERVER_ROOT_URL=http://13.51.157.159/grafana/  # ← important pour Grafana
       - GF_SERVER_SERVE_FROM_SUB_PATH=true              # ← important pour Grafana
     volumes:
