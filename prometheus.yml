@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s        # scrape toutes les 15 secondes
+
+scrape_configs:
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']   # nom du service docker-compose
